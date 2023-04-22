@@ -38,7 +38,7 @@ class Program
         }
         else
         {
-            Console.WriteLine($"youll get it next time! ");
+            Console.WriteLine($"You'll get it next time! ");
         }
     }
 }
