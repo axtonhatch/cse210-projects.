@@ -2,7 +2,7 @@ using System;
 
 public class Questions
 {
-    public void Display()
+    public string Display()
     {
         List<string> mylist = new List<string>(new string[] 
         {"Who was the person you were most excited to see today?",
@@ -16,5 +16,7 @@ public class Questions
         int someRandomQuestion = Rndm.Next(0, mylist.Count());
 
         Console.WriteLine(mylist.ElementAt(someRandomQuestion));
+
+        return (mylist.ElementAt(someRandomQuestion));
     }
 }

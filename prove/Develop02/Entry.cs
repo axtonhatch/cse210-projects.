@@ -6,9 +6,9 @@ public class Entry
 
     public string _ask;
 
-    public void Display1()
+    public string Display1()
     {
         Questions ques1 = new Questions();
-        ques1.Display();
+        return ques1.Display();
     }
 }
