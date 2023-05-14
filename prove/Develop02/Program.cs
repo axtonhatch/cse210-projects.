@@ -24,13 +24,13 @@ class Program
             if (number == 1)
             {
                 Entry entryOne = new Entry();
-                entryOne.Display1();
+                string randomQuestion = entryOne.Display1();
 
                 Entry entryTwo = new Entry();
                 entryTwo._ask = Console.ReadLine();
 
                 string file = "text.txt";
-                string txt = $"Date:{entryTwo._date} Ask:{entryTwo._ask}";
+                string txt = $"Date: {entryTwo._date}\r\nAsk: {randomQuestion}\r\nAnswer: {entryTwo._ask}";
                 File.AppendAllLines(file, new string[] { txt });
             }
 
