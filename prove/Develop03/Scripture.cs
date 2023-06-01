@@ -3,7 +3,7 @@ public class Scripture
       private Reference _reference;
       private List <Word> _words = new List <Word>();
       
-      public Scripture (string book, string chapter, string verses,string FullScripture)
+      public Scripture (string book, string chapter, string verses, string FullScripture)
       {     
             _reference =  new Reference(book,chapter,verses);
             string [] verseWords = FullScripture.Split(" ");
