@@ -19,7 +19,6 @@ class Program
                 opcion = int.Parse(Console.ReadLine());
                 switch(opcion){
 
-
                             case 1:
                             Breathing.InicialMessage();
                             Breathing.BreathComplete();
@@ -39,10 +38,7 @@ class Program
                             default:
                                 Console.Write("Please enter a valid option:\n");
                                 break;
-
                     }
         }
-
-
     }
 }
